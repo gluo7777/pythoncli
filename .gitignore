@@ -1,0 +1,7 @@
+# windows sucks -> different encoding -> .gitignore stopped working
+
+**/.idea
+**/playground
+**/venv
+**/config.ini
+__pycache__
