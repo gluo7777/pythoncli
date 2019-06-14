@@ -45,7 +45,7 @@ def print_env(ctx, pretty, file):
 @root.command('github')
 @click.option('--name', '-n', prompt='Enter repository name', help='Name of repository to create')
 @click.option('--description', '-d', prompt='Enter description', help='Description for repository', default='No description was set for this project.')
-@click.option('--private', '-p', is_flag=True, default=False)
+@click.option('--private', '-p', is_flag=True, default=False, help='Is this a private repository?')
 @click.pass_context
 def create_repo(ctx, name, description, private):
     response = github.create_repo(name, description, private)
